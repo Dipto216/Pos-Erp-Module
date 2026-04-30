@@ -8,7 +8,7 @@ A Retail POS prototype that demonstrates:
 - Offline sale entry with local SQLite storage
 - Inventory management with real-time stock deduction
 - Sync mechanism from local POS to central ERP server
-- Clean layered architecture (Controller → Service → Repository)
+  
 
 The system has two separate applications:
 
