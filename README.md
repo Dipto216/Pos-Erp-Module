@@ -24,9 +24,7 @@ The system has two separate applications:
 | Backend API | ASP.NET Core 8 Web API |
 | Frontend | ASP.NET Core 8 MVC (Razor Views) |
 | Database | SQLite via Entity Framework Core |
-| Architecture | Controller → Service → Repository |
 | UI | Bootstrap 5 + Bootstrap Icons |
-| API Communication | 
 | Language | C# / .NET 8 |
 
 ---
