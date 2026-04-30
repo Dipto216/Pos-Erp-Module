@@ -26,7 +26,7 @@ The system has two separate applications:
 | Database | SQLite via Entity Framework Core |
 | Architecture | Controller → Service → Repository |
 | UI | Bootstrap 5 + Bootstrap Icons |
-| API Communication | HttpClient (JSON) |
+| API Communication | 
 | Language | C# / .NET 8 |
 
 ---
