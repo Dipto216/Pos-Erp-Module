@@ -1,0 +1,48 @@
+﻿
+@{
+    ViewData["Title"] = "Sync";
+}
+
+<div class="container mt-4" style="max-width: 600px;">
+
+    <div class="card shadow-sm border-0">
+        <div class="card-header bg-success text-white">
+            <h5 class="mb-0">
+                <i class="bi bi-arrow-repeat me-2"></i> Sync Sales Data
+            </h5>
+        </div>
+
+        <div class="card-body p-4">
+
+          
+            @if (TempData["Success"] != null)
+            {
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <i class="bi bi-check-circle-fill me-2"></i> @TempData["Success"]
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                </div>
+            }
+
+            <p class="text-muted mb-4">
+                Click the button below to sync all <span class="badge bg-warning text-dark">Pending</span>
+                sales to the server. After sync, status will change to
+                <span class="badge bg-success">Synced</span>.
+            </p>
+
+            <a href="/Product" class="btn btn-outline-secondary btn-sm mb-4">
+                <i class="bi bi-arrow-left me-1"></i> Back to Products
+            </a>
+
+            <div class="d-grid">
+                <form asp-action="SyncNow" method="post">
+                    @Html.AntiForgeryToken()
+                    <button type="submit" class="btn btn-success btn-lg w-100">
+                        <i class="bi bi-arrow-repeat me-2"></i> Sync Now
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+</div>
